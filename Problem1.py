@@ -6,15 +6,12 @@
 def Main():
   arr=[]
   s=raw_input("Enter your string:")
-  for i in s:
-    arr.append(i)
-  uniq_char=[]
-  for j in arr:
-    if j in uniq_char:
+  for i in arr:
+    if i in arr:
       continue
     else:
-      uniq_char.append(j)
-  print "Unique characters in the string are:",uniq_char
+      arr.append(j)
+  print "Unique characters in the string are:",arr
   
 
 if __name__=="__main__":
